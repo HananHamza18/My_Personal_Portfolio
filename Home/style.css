@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: black;
+}
+
+/* navbar styling */
+.navbar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: transparent;
+    z-index: 1000;
+}
+/* navbar logo styling */
+
+.logo {
+    color: red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* navbar a styling */
+.nav-elements a {
+    color: white;
+    font-family: sans-serif;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.nav-elements a:hover {
+    color: orangered;
+    transform: scale(1.1);
+    border-bottom: 2px solid #b74b4b;
+}
+.nav-elements a:active{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* main body styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%; 
+    min-height: calc(100vh - 80px); 
+    color: white;
+}
+
+/* image styling */
+
+.image img {
+    width: 400px;
+    height: auto;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+.image img:active {
+    width: 280px;
+    content: url("vagabondOnClick2.jpg"); /*Image change on click*/
+    
+}
+/* text styling */
+.text {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+.text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+/* button styling */
+
+.text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.text button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #b74b4b;
+}
+/* footer styling */
+
+footer {
+    position: relative; 
+    background-color: #b74b4b;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto; 
+}
+footer p{
+    color: white;
+    font-size: 1.5rem;
+    background-color: #b74b4b;
+}
+footer a img{
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    margin: auto;
+    transition: 0.5s ease;
+}
+footer a img:hover {
+    transform: scale(1.1);
+}
